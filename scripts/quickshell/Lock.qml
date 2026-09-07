@@ -101,7 +101,8 @@ ShellRoot {
                 readonly property real sc: scaler.baseScale
                 // --------------------------------
 
-                property string staticWallpaperPath: "file:///tmp/lock_bg.png"
+                //property string staticWallpaperPath: "file:///~/.config/niri/wall.jpg"
+                readonly property string staticWallpaperPath: Quickshell.env("HOME") + "/.config/niri/wall.jpg"
 
                 property string batPct: "100"
                 property string batStatus: "AC"
